@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10f;
     public float floatHeight  = 1;
 
+    public bool doseFloat;
+
     private Rigidbody rb;
 
     void Start() 
@@ -22,7 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        Hover();
+        if(doseFloat)
+            Hover();
+
     }
 
     void Hover()
