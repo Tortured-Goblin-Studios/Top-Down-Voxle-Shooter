@@ -455,12 +455,12 @@ PrefabInstance:
     - target: {fileID: 5991936135721051889, guid: 064f746ab633a4f4a90080d2478fe714,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.33
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5991936135721051889, guid: 064f746ab633a4f4a90080d2478fe714,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5991936135721051889, guid: 064f746ab633a4f4a90080d2478fe714,
         type: 3}
@@ -500,6 +500,11 @@ PrefabInstance:
     - target: {fileID: 5991936135721051889, guid: 064f746ab633a4f4a90080d2478fe714,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5991936135721051893, guid: 064f746ab633a4f4a90080d2478fe714,
+        type: 3}
+      propertyPath: doseFloat
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -699,8 +704,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 714749155}
-  smoothSpeed: 0.65
-  offset: {x: 0, y: 15, z: -4}
+  smoothSpeed: 1
+  offset: {x: 0, y: 10, z: 0}
 --- !u!1 &1182348906
 GameObject:
   m_ObjectHideFlags: 0
