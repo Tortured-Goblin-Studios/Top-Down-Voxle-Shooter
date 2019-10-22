@@ -13,6 +13,14 @@ public class DeleteBulletOnImpact : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        int ricChance = Random.Range(0, 2);
+
+        switch(ricChance) {
+            case 0:
+                break;
+            case 1:
+                Destroy(gameObject);
+                break;
+        }
     }
 }
