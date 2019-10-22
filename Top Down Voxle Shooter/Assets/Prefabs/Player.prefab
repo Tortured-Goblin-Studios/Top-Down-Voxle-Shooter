@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 5991936135721051893}
   - component: {fileID: 363771250}
   - component: {fileID: 3168646879124757508}
+  - component: {fileID: 3428010182476674803}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -255,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5991936135721051892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1022956337}
@@ -367,3 +368,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet1: {fileID: 208586026548878466, guid: adda5780ffd1aff4da4e53c7a5f0ed7a, type: 3}
   blasterPos: {fileID: 8641236790076756676}
+--- !u!114 &3428010182476674803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5991936135721051892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec3744f2ac834d418e6e5ce715ece63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 0
+  spawnPoint: {fileID: 0}
