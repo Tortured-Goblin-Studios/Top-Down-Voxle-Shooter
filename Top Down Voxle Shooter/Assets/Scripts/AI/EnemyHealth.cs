@@ -6,12 +6,10 @@ public class EnemyHealth : MonoBehaviour
 {
     public float enemyStartHealth;
     private float enemyHealth;
-    public Transform enemySpawnPoint;
 
     void Start()
     {
         enemyHealth = enemyStartHealth;
-        enemySpawnPoint = GameObject.Find("Enemy Spawn Point").transform;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,14 +19,13 @@ public class EnemyHealth : MonoBehaviour
             enemyHealth -= 1;
             if (enemyHealth <= 0)
             {
-                Respawn();
+                Die();
             }
         }
     }
 
-    public void Respawn()
+    public void Die()
     {
-        transform.position = enemySpawnPoint.position;
-        enemyHealth = enemyStartHealth;
+        Destroy(gameObject);
     }
 }
