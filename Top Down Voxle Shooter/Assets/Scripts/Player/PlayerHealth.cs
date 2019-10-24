@@ -30,6 +30,14 @@ public class PlayerHealth : MonoBehaviour
                 Respawn();
             }
         }
+        if (collision.transform.tag == "Explosion")
+        {
+            health -= 10;
+            if (health <= 0)
+            {
+                Respawn();
+            }
+        }
     }
 
     public void Respawn()
