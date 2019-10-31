@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if(doseFloat)
             Hover();
-
     }
 
     void Hover()

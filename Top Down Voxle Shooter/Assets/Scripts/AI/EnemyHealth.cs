@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         enemyHealth = enemyStartHealth;
-        enemySpawnPoint = GameObject.Find("Enemy Spawn Point").transform;
+        //enemySpawnPoint = GameObject.Find("Enemy Spawn Point").transform;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -19,9 +19,15 @@ public class EnemyHealth : MonoBehaviour
         if (collision.transform.tag == "Bullet")
         {
             enemyHealth -= 1;
+            Debug.Log("Ding");
+
+            if(enemyHealth <= 0) {
+                Destroy(gameObject);
+            }
+
             if (enemyHealth <= 0)
             {
-                Respawn();
+                //Respawn();
             }
         }
     }
