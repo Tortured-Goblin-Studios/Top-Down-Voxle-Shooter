@@ -7,8 +7,8 @@ public class BasicBulletScript : MonoBehaviour
     public Rigidbody bulletRB;
     public float moveSpeed;
 
-    void Start()
+    void Update()
     {
-        bulletRB.AddForce(transform.forward * moveSpeed);
+        transform.Translate(transform.forward * Time.deltaTime * moveSpeed, Space.World);
     }
 }

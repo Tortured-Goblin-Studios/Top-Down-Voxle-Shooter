@@ -16,7 +16,7 @@ public class EvilAI : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.Find("Player").transform;
+        Player = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
