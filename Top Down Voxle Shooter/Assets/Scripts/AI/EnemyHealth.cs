@@ -6,7 +6,6 @@ public class EnemyHealth : MonoBehaviour
 {
     public float enemyStartHealth;
     private float enemyHealth;
-    public Transform enemySpawnPoint;
 
     void Start()
     {
@@ -32,9 +31,8 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public void Respawn()
+    public void Die()
     {
-        transform.position = enemySpawnPoint.position;
-        enemyHealth = enemyStartHealth;
+        Destroy(gameObject);
     }
 }
