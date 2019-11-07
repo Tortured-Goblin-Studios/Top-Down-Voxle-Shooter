@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfEnemies: 1
   enemyToSpawn:
-  - {fileID: 4454302473404253434, guid: 88847ea59d8b56445aa5b10670efee62, type: 3}
+  - {fileID: 139393622610302079, guid: 10162d884b00e3b4e8949d300cd50452, type: 3}
   spawnPoint: {fileID: 887305186}
   spawnDelay: 1
 --- !u!1 &919834147
