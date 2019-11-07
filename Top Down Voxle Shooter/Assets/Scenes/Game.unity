@@ -1063,7 +1063,6 @@ GameObject:
   - component: {fileID: 887305186}
   - component: {fileID: 887305187}
   - component: {fileID: 887305188}
-  - component: {fileID: 887305189}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -1110,26 +1109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fca6932770485e4c8e82d213adc829f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfEnemies: 3
-  enemyToSpawn: {fileID: 452038178303645575, guid: 76165cb859cd2a64b8a12c928e63f2ca,
-    type: 3}
-  spawnPoint: {fileID: 887305186}
-  spawnDelay: 1
---- !u!114 &887305189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887305185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fca6932770485e4c8e82d213adc829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   numberOfEnemies: 1
-  enemyToSpawn: {fileID: 3846676406077588677, guid: 313f114a7c062644f9181c4045c18842,
-    type: 3}
+  enemyToSpawn:
+  - {fileID: 4454302473404253434, guid: 88847ea59d8b56445aa5b10670efee62, type: 3}
   spawnPoint: {fileID: 887305186}
   spawnDelay: 1
 --- !u!1 &919834147

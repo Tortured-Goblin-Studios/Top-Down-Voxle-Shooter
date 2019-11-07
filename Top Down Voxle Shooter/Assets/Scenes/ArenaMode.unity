@@ -790,6 +790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 452038178303645575, guid: 76165cb859cd2a64b8a12c928e63f2ca, type: 3}
+  - {fileID: 3846676406077588677, guid: 313f114a7c062644f9181c4045c18842, type: 3}
+  - {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
   enemySpawnPoints:
   - {fileID: 1357401071}
   - {fileID: 1659420214}
