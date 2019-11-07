@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private float health;
     public Transform spawnPoint;
     public TextMeshProUGUI healthText;
+    public string levelToLoad;
 
     void Start()
     {
@@ -44,5 +46,7 @@ public class PlayerHealth : MonoBehaviour
     {
         transform.position = spawnPoint.position;
         health = playerHealth;
+        SceneManager.LoadScene(levelToLoad);
+
     }
 }

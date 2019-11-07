@@ -13,21 +13,19 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        spawnDelay = currentSpawnDelay;
+        currentSpawnDelay = 0;
     }
 
     void Update()
     {
-        currentSpawnDelay -= Time.deltaTime;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.transform.tag == "Player")
+        currentSpawnDelay += Time.deltaTime;
+        if (currentSpawnDelay > spawnDelay)
         {
             SpawnEnemies();
         }
     }
+
+   
 
     void SpawnEnemies()
     {
@@ -35,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
         {
             int spawnID = Random.Range(0, enemyToSpawn.Length);
             Instantiate(enemyToSpawn[spawnID], spawnPoint.position, spawnPoint.rotation);
-            currentSpawnDelay = spawnDelay;
+            currentSpawnDelay = 0;
         }
     }
 }

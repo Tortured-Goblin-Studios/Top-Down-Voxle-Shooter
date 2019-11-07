@@ -11,7 +11,7 @@ public class EvilAI : MonoBehaviour
     int MoveSpeed = 1;
     int MaxDist = 1000;
     int MinDist = 1;
-    float enemyDelay = 1;
+    public float enemyShootDelay = 1;
     float enemyCurrentDelay;
 
     void Start()
@@ -32,7 +32,7 @@ public class EvilAI : MonoBehaviour
             if(enemyCurrentDelay <= 0)
             {
                 Instantiate(enemyBullet, blasterPos.position, blasterPos.rotation);
-                enemyCurrentDelay = enemyDelay;
+                enemyCurrentDelay = enemyShootDelay;
             }
         }
     }
