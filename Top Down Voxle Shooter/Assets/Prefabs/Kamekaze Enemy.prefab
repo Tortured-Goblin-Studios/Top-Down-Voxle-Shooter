@@ -110,6 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStartHealth: 5
+  explosionEffect: {fileID: 1000011128802252, guid: b7d79142b05b22342a3c96b4d221408b,
+    type: 3}
+  explodePos: {fileID: 3846676406077588673}
 --- !u!114 &3169844407868039363
 MonoBehaviour:
   m_ObjectHideFlags: 0

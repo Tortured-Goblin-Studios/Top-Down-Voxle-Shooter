@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public float enemyStartHealth;
     private float enemyHealth;
+    public GameObject explosionEffect;
+    public Transform explodePos;
 
     void Start()
     {
@@ -13,16 +15,16 @@ public class EnemyHealth : MonoBehaviour
         //enemySpawnPoint = GameObject.Find("Enemy Spawn Point").transform;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Bullet")
+        if (other.transform.tag == "Bullet")
         {
             enemyHealth -= 1;
             Debug.Log("Ding");
 
             if(enemyHealth <= 0) {
-                Destroy(gameObject);
-            }
+                Die();
+             }
 
             if (enemyHealth <= 0)
             {
@@ -33,6 +35,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        Instantiate(explosionEffect, explodePos.position, explodePos.rotation);
         Destroy(gameObject);
     }
 }

@@ -20,9 +20,9 @@ public class PlayerHealth : MonoBehaviour
         healthText.text = health.ToString();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.transform.tag == "enemyBullet")
+        if(other.transform.tag == "enemyBullet")
         {
             health-= 1;
             if(health <= 0)
@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
                 Respawn();
             }
         }
-        if (collision.transform.tag == "Explosion")
+        if (other.transform.tag == "Explosion")
         {
             health -= 10;
             if (health <= 0)
