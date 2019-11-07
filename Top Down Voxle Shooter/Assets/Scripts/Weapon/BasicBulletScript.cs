@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class BasicBulletScript : MonoBehaviour
 {
-    public Rigidbody bulletRB;
     public float moveSpeed;
 
     void Update()
     {
         transform.Translate(transform.forward * Time.deltaTime * moveSpeed, Space.World);
+    }
+
+    void OnCollisionEnter(Collision col) {
+        if(col.transform.GetComponent<ArenaPlayerHealth>()) {
+            col.transform.GetComponent<ArenaPlayerHealth>().TakeDamage(1);
+        }
     }
 }

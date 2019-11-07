@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemyBullet
   - Bullet
   - Kamekaze Enemy
   - Explosion
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
