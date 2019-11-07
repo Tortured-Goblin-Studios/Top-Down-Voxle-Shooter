@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public int numberOfEnemies;
-    public GameObject enemyToSpawn;
+    public GameObject[] enemyToSpawn;
     public Transform spawnPoint;
 
     public float spawnDelay;
@@ -33,7 +33,8 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < numberOfEnemies; i++)
         {
-            Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation);
+            int spawnID = Random.Range(0, enemyToSpawn.Length);
+            Instantiate(enemyToSpawn[spawnID], spawnPoint.position, spawnPoint.rotation);
             currentSpawnDelay = spawnDelay;
         }
     }
