@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRB: {fileID: -4562143888051968349}
   moveSpeed: 35
+  isArena: 0
 --- !u!114 &8372824505147588842
 MonoBehaviour:
   m_ObjectHideFlags: 0
