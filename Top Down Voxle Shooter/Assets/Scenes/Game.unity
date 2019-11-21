@@ -1103,7 +1103,7 @@ MonoBehaviour:
   - {fileID: 452038178303645575, guid: 76165cb859cd2a64b8a12c928e63f2ca, type: 3}
   - {fileID: 452038178303645575, guid: a0a226201150ad74aba88a882ac53034, type: 3}
   spawnPoint: {fileID: 887305186}
-  spawnDelay: 1
+  spawnDelay: 5
 --- !u!1 &919834147
 GameObject:
   m_ObjectHideFlags: 0
