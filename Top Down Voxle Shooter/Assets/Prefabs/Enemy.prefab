@@ -115,6 +115,7 @@ MonoBehaviour:
   enemyBullet: {fileID: 1997687828814637768, guid: acdf69ec46325cb46986878b66fddfb7,
     type: 3}
   blasterPos: {fileID: 5860780232960366533}
+  enemyShootDelay: 5
 --- !u!54 &2890375707984050781
 Rigidbody:
   m_ObjectHideFlags: 0
