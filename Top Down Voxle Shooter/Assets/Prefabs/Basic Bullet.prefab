@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7886331790806851154}
   - component: {fileID: 4241897945266737689}
   - component: {fileID: 4798898933778133635}
-  - component: {fileID: 7885242314389616288}
   - component: {fileID: -7208793929471476866}
+  - component: {fileID: 2304161555765012212}
   m_Layer: 9
   m_Name: Basic Bullet
   m_TagString: Bullet
@@ -109,19 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRB: {fileID: -7208793929471476866}
   moveSpeed: 35
---- !u!114 &7885242314389616288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208586026548878466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5be9a9e5dbf494cabb4af849d251c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyTime: 7
+  isArena: 0
 --- !u!54 &-7208793929471476866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -138,3 +126,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2304161555765012212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208586026548878466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0fa9745783e514bbcb0b7a10762eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 10

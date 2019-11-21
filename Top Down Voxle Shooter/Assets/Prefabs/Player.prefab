@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 363771250}
   - component: {fileID: 3168646879124757508}
   - component: {fileID: 3428010182476674803}
+  - component: {fileID: 5291092213369465343}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -380,6 +381,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec3744f2ac834d418e6e5ce715ece63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 0
+  maxHealth: 0
   spawnPoint: {fileID: 0}
   healthText: {fileID: 0}
+  healthBarImage: {fileID: 0}
+  levelToLoad: 
+--- !u!114 &5291092213369465343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5991936135721051892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31091b3d57fde3f4ea700b51cbd99238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
