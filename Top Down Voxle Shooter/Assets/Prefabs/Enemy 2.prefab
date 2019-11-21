@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStartHealth: 5
-  explosionEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
+  explosionEffect: {fileID: 1000011128802252, guid: b7d79142b05b22342a3c96b4d221408b,
     type: 3}
   explodePos: {fileID: 452038178303645571}
 --- !u!95 &1566456548454586718
@@ -174,11 +174,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1
       objectReference: {fileID: 0}
-    - target: {fileID: -5975033157549033438, guid: 0ae913313d6c09d41bd9e249fe2374b2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0ae913313d6c09d41bd9e249fe2374b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,6 +228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: 0ae913313d6c09d41bd9e249fe2374b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ae913313d6c09d41bd9e249fe2374b2, type: 3}
