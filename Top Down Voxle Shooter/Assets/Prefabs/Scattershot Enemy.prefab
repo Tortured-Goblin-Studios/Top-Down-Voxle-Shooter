@@ -111,7 +111,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &7656889001571755886
 MonoBehaviour:
@@ -139,6 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStartHealth: 5
+  explosionEffect: {fileID: 1000011128802252, guid: b7d79142b05b22342a3c96b4d221408b,
+    type: 3}
+  explodePos: {fileID: 139393622610302083}
 --- !u!1 &1060712206635983758
 GameObject:
   m_ObjectHideFlags: 0
