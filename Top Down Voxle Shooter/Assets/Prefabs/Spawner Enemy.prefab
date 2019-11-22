@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: -8
-  enemySpawnDelay: 10
+  enemySpawnDelay: 15
   spawnPoint: {fileID: 7063634878397527044}
   enemies:
   - {fileID: 452038178303645575, guid: 76165cb859cd2a64b8a12c928e63f2ca, type: 3}

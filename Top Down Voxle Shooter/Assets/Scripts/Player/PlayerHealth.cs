@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth;
-    private float currentHealth;
+    public float currentHealth;
     public Transform spawnPoint;
     public TextMeshProUGUI healthText;
     public Image healthBarImage;

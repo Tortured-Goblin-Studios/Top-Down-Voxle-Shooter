@@ -8,13 +8,19 @@ public class DeleteBulletOnImpact : MonoBehaviour
 
     void Start()
     {
-     //   Destroy(gameObject, destroyTime);
+     Destroy(gameObject, destroyTime);
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
+        Destroy(gameObject);
+    }
 
-                Destroy(gameObject);
-        
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.tag == "PlayerSheild")
+        {
+            Destroy(gameObject);
+        }
     }
 }

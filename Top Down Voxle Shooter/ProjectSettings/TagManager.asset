@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Kamekaze Enemy
   - Explosion
+  - Powerup
+  - PlayerSheild
   layers:
   - Default
   - TransparentFX
